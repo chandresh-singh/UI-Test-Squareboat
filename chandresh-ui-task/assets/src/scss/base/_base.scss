@@ -1,0 +1,49 @@
+@import "colors", "typography", "bootstrap", "functions";
+
+/*=============================================
+=            Global CSS            =
+=============================================*/
+* , *:before , *:after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: $c-alabaster;
+    color: $c-edward;
+    font-family: $ff-primary;
+    font-size: $fs-x-medium;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+    color: $c-black;
+}
+
+h4 {
+    color: $c-curduroy;
+}
+
+.ch-btn {
+    @extend %ch-btn;
+
+    &--primary {
+        @extend %ch-btn--primary;
+    }
+}
+
+a {
+    color: $c-dusty-gray;
+
+    &:hover {
+        color: $c-primary;
+        text-decoration: none;
+    }
+}
+/*=====  End of Global CSS  ======*/

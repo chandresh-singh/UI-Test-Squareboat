@@ -1,0 +1,42 @@
+/*----------  Z-index Functions   ----------*/
+$z-indexes: (
+    lowest  : -1,
+    low-xx  : 100,
+    low-x   : 200,
+    low     : 300,
+    high    : 400,
+    high-x  : 500,
+    highest : 1000
+);
+
+@function z-index($index) {
+    $value: map-get($z-indexes, $index);
+
+    @return $value;
+}
+
+%ch-btn {
+    background-color: $c-white;
+    border: none;
+    border-radius: 5px;
+    color: $c-black;
+    display: inline-block;
+    font-weight: 500;
+    outline: none;
+    padding: 10px 15px;
+    transition: 0.3s linear all;
+
+    .fa {
+        color: $c-dusty-gray;
+        margin-right: 5px;
+    }
+
+    &--primary {
+        background-color: $c-primary;
+        color: $c-white;
+
+        .fa {
+            color: $c-white;
+        }
+    }
+}

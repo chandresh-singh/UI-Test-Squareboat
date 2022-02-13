@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="assets/dist/css/base.min.css" />
+    <link rel="stylesheet" type="text/css" media="(min-width: 576px)" href="assets/dist/css/tablet.min.css" />
+    <link rel="stylesheet" type="text/css" media="(min-width: 768px)" href="assets/dist/css/desktop.min.css" />
+</head>
+
+<body>
+<!--============================
+=            HEADER            =
+=============================-->
+<header class="ch-header">
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <img src="https://via.placeholder.com/150x40" alt="Main Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <div class="ml-auto">
+                <ul id="myTab" class="nav ch-tab" role="tablist">
+                    <li class="nav-item">
+                        <a id="home-tab" href="#home" class="nav-link" data-toggle="tab" role="tab" aria-controls="home" aria-selected="true">
+                            <i class="fa fa-user" aria-hidden="true"></i> Groups
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="profile-tab" href="#profile" class="nav-link active" data-toggle="tab" role="tab" aria-controls="profile" aria-selected="false">
+                            <i class="fa fa-comment" aria-hidden="true"></i> Messages
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="contact-tab" href="#contact" class="nav-link" data-toggle="tab" role="tab" aria-controls="contact" aria-selected="false">
+                            <i class="fa fa-video-camera" aria-hidden="true"></i> Video Calls
+                        </a>
+                    </li>
+                    <li class="ch-tab__slider"></li>
+                </ul>
+            </div>
+            <ul class="navbar-nav align-items-center ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fa fa-bell" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="https://via.placeholder.com/40" class="ch-header__profile" alt="Profile Image">
+                        Robin Wang
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a href="#" class="dropdown-item">Log Out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<!--====  End of HEADER  ====-->
+
+<!--============================
+=            Main Content            =
+=============================-->
+<main class="ch-main ch-message">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- SideBar -->
+            <aside class="ch-message__sidebar">
+                <div class="ch-message__author">
+                    <img src="https://via.placeholder.com/150" class="ch-message__author-img" alt="Profile Image">
+                    <h2 class="ch-message__author-name">Robin Wang</h2>
+                    <div class="ch-message__author-info">Life starts at the end of your comfort zone</div>
+                </div>
+                <div class="ch-message__tab">
+                    <ul id="myTabVertical" class="ch-message__tab-list nav d-block" role="tablist">
+                        <li class="ch-message__tab-list-item">
+                            <a id="profile-tab-vertical" href="#profile" class="nav-link active" data-toggle="tab" role="tab" aria-controls="profile" aria-selected="false">
+                                <i class="fa fa-comment" aria-hidden="true"></i> Messages
+                            </a>
+
+                            <ul>
+                                <li><a href="#" class="active">Chats</a></li>
+                                <li><a href="#">Send Message</a></li>
+                            </ul>
+                        </li>
+                        <li class="ch-message__tab-list-item">
+                            <a id="home-tab-vertical" href="#home" class="nav-link" data-toggle="tab" role="tab" aria-controls="home" aria-selected="true">
+                                <i class="fa fa-user" aria-hidden="true"></i> Groups
+                            </a>
+
+                            <ul>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Create Groups</a></li>
+                            </ul>
+                        </li>
+                        <li class="ch-message__tab-list-item">
+                            <a id="contact-tab-vertical" href="#contact" class="nav-link" data-toggle="tab" role="tab" aria-controls="contact" aria-selected="false">
+                                <i class="fa fa-video-camera" aria-hidden="true"></i> Video Calls
+                            </a>
+
+                            <ul>
+                                <li><a href="#" class="">History</a></li>
+                                <li><a href="#">Calls</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <!-- Main content area -->
+            <div class="ch-message__content">
+                <div class="tab-content" id="myTabContent">
+                    <section id="home" class="tab-pane fade" role="tabpanel" aria-labelledby="home-tab">
+                        <h2 class="m-0 p-5 text-center">Group Content will appear Here</h2>
+                    </section>
+                    <section id="profile" class="tab-pane fade show active" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="ch-message__title">
+                            <h1><i class="fa fa-comment" aria-hidden="true"></i> Messages</h1>
+                        </div>
+                        <div class="ch-message__chat">
+                            <div class="row">
+                                <aside class="ch-message__chat-list">
+                                    <div class="ch-message__chat-header">
+                                        <h4 class="m-0">Chats</h4>
+                                        <span>29/30</span>
+                                    </div>
+                                    <div class="ch-message__inbox">
+                                        <div class="ch-message__inbox-list">
+                                            <div class="ch-message__inbox-item active">
+                                                <div class="ch-message__inbox-head">
+                                                    <img src="https://via.placeholder.com/60" class="ch-message__inbox-image" alt="Profile Image">
+                                                    <div class="ch-message__inbox-detail">
+                                                        <h4 class="ch-message__inbox-name">Olivia Sol</h4>
+                                                        <div class="ch-message__inbox-msg">
+                                                            I'll be send the mail soon.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="ch-message__inbox-meta">
+                                                    <div class="ch-message__inbox-time">19 Jan, 2018 | 03:49 pm</div>
+                                                    <div class="che-message__inbox-data"><i class="fa fa-eye" aria-hidden="true"></i> 20 Replies | <i class="fa fa-bar-chart" aria-hidden="true"></i> 290/300</div>
+                                                </div>
+                                            </div>
+                                            <div class="ch-message__inbox-item">
+                                                <div class="ch-message__inbox-head">
+                                                    <img src="https://via.placeholder.com/60" class="ch-message__inbox-image" alt="Profile Image">
+                                                    <div class="ch-message__inbox-detail">
+                                                        <h4 class="ch-message__inbox-name">Olivia Sol</h4>
+                                                        <div class="ch-message__inbox-msg">
+                                                            I'll be send the mail soon.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="ch-message__inbox-meta">
+                                                    <div class="ch-message__inbox-time">19 Jan, 2018 | 03:49 pm</div>
+                                                    <div class="che-message__inbox-data"><i class="fa fa-eye" aria-hidden="true"></i> 20 Replies | <i class="fa fa-bar-chart" aria-hidden="true"></i> 290/300</div>
+                                                </div>
+                                            </div>
+                                            <div class="ch-message__inbox-item">
+                                                <div class="ch-message__inbox-head">
+                                                    <img src="https://via.placeholder.com/60" class="ch-message__inbox-image" alt="Profile Image">
+                                                    <div class="ch-message__inbox-detail">
+                                                        <h4 class="ch-message__inbox-name">Olivia Sol</h4>
+                                                        <div class="ch-message__inbox-msg">
+                                                            I'll be send the mail soon.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="ch-message__inbox-meta">
+                                                    <div class="ch-message__inbox-time">19 Jan, 2018 | 03:49 pm</div>
+                                                    <div class="che-message__inbox-data"><i class="fa fa-eye" aria-hidden="true"></i> 20 Replies | <i class="fa fa-bar-chart" aria-hidden="true"></i> 290/300</div>
+                                                </div>
+                                            </div>
+                                            <div class="ch-message__inbox-item">
+                                                <div class="ch-message__inbox-head">
+                                                    <img src="https://via.placeholder.com/60" class="ch-message__inbox-image" alt="Profile Image">
+                                                    <div class="ch-message__inbox-detail">
+                                                        <h4 class="ch-message__inbox-name">Olivia Sol</h4>
+                                                        <div class="ch-message__inbox-msg">
+                                                            I'll be send the mail soon.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="ch-message__inbox-meta">
+                                                    <div class="ch-message__inbox-time">19 Jan, 2018 | 03:49 pm</div>
+                                                    <div class="che-message__inbox-data"><i class="fa fa-eye" aria-hidden="true"></i> 20 Replies | <i class="fa fa-bar-chart" aria-hidden="true"></i> 290/300</div>
+                                                </div>
+                                            </div>
+                                            <div class="ch-message__inbox-item">
+                                                <div class="ch-message__inbox-head">
+                                                    <img src="https://via.placeholder.com/60" class="ch-message__inbox-image" alt="Profile Image">
+                                                    <div class="ch-message__inbox-detail">
+                                                        <h4 class="ch-message__inbox-name">Olivia Sol</h4>
+                                                        <div class="ch-message__inbox-msg">
+                                                            I'll be send the mail soon.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="ch-message__inbox-meta">
+                                                    <div class="ch-message__inbox-time">19 Jan, 2018 | 03:49 pm</div>
+                                                    <div class="che-message__inbox-data"><i class="fa fa-eye" aria-hidden="true"></i> 20 Replies | <i class="fa fa-bar-chart" aria-hidden="true"></i> 290/300</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </aside>
+                                <div class="ch-message__chat-box">
+                                    <div class="ch-message__chat-box-head">
+                                        <ul id="chatTab" class="nav ch-tab" role="tablist">
+                                            <li class="nav-item">
+                                                <a id="chat-tab" href="#chat-home" class="nav-link" data-toggle="tab" role="tab" aria-controls="chat-home" aria-selected="false">
+                                                    <i class="fa fa-eye" aria-hidden="true"></i> Replies
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a id="chat-profile-tab" href="#chat-profile" class="nav-link active" data-toggle="tab" role="tab" aria-controls="chat-profile" aria-selected="true">
+                                                    <i class="fa fa-comment" aria-hidden="true"></i> Reports
+                                                </a>
+                                            </li>
+                                            <li class="ch-tab__slider"></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content" id="chat-tabContent">
+                                        <div class="tab-pane fade" id="chat-home" role="tabpanel" aria-labelledby="chat-tab">
+                                            <div class="ch-message__chat-box-content">
+                                                <div class="ch-message__chat-box-time">Today</div>
+                                                <div class="ch-message__chat-box-list-wrap">
+                                                    <ul class="ch-message__chat-box-list">
+                                                        <li class="ch-message__chat-box-list-item ch-message__chat-box-list-item--send">
+                                                            <div class="message message--bottom">
+                                                                Hey Olivia &#128512;, Did you got a chance to see venue?
+                                                            </div>
+                                                            <img src= "https://via.placeholder.com/50" class="message-profile" alt="">
+                                                        </li>
+                                                        <li class="ch-message__chat-box-list-item ch-message__chat-box-list-item--rcv">
+                                                            <div class="message">
+                                                                Hey Robin, this seems like a great start &#128519;
+                                                            </div>
+                                                        </li>
+                                                        <li class="ch-message__chat-box-list-item ch-message__chat-box-list-item--rcv">
+                                                            <div class="message message--gallery message--bottom">
+                                                                <div class="popup-gallery">
+                                                                    <div class="popup-gallery__large">
+                                                                        <a href="https://via.placeholder.com/400x300" title="The Cleaner"><img src="https://via.placeholder.com/400x300"></a>
+                                                                    </div>
+                                                                    <div class="popup-gallery__small">
+                                                                        <a href="https://via.placeholder.com/300x300" title="Winter Dance"><img src="https://via.placeholder.com/90"></a>
+                                                                        <a href="https://via.placeholder.com/1200x800" title="The Uninvited Guest"><img src="https://via.placeholder.com/90"></a>
+                                                                        <a href="https://via.placeholder.com/700" title="Oh no, not again!"><img src="https://via.placeholder.com/90"></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <img src= "https://via.placeholder.com/50" class="message-profile" alt="">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="ch-message__chat-box-input">
+                                                <ul class="ch-message__chat-box-attachment">
+                                                    <li><i class="fa fa-volume-up" aria-hidden="true"></i> Audio</li>
+                                                    <li><i class="fa fa-video-camera" aria-hidden="true"></i> Video</li>
+                                                    <li><i class="fa fa-text-width" aria-hidden="true"></i> Text</li>
+                                                    <li><i class="fa fa-picture-o" aria-hidden="true"></i> Image</li>
+                                                    <li><i class="fa fa-microphone" aria-hidden="true"></i> TTS</li>
+                                                    <li><i class="fa fa-film" aria-hidden="true"></i> Audio & Text</li>
+                                                </ul>
+                                                <form class="form-inline">
+                                                    <span class="ch-message__chat-box-toggle">+</span>
+                                                    <label class="sr-only" for="inlineFormInputName2">Name</label>
+                                                    <input type="text" class="form-control" id="inlineFormInputName2" placeholder="OMG Olivia !! &#128519; &#128519; &#128519;">
+                                                    <button type="submit" class="ch-btn ch-btn--primary"><i class="fa fa-location-arrow" aria-hidden="true"></i> Send</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade show active" id="chat-profile" role="tabpanel" aria-labelledby="chat-profile-tab">
+                                            <h2 class="m-0 p-5 text-center">
+                                                Report Data Will Show Here. For Chat Data please click on Replies button above.
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section id="contact" class="tab-pane fade" role="tabpanel" aria-labelledby="contact-tab">
+                        <h2 class="m-0 p-5 text-center">Video Section will appear Here</h2>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+<!--====  End of Main Content  ====-->
+
+<!--============================
+=            FOOTER            =
+=============================-->
+
+<!--====  End of FOOTER  ====-->
+<script defer src="assets/dist/js/main.min.js"></script>
+</body>
+
+</html>
